@@ -12,73 +12,74 @@
         android:id="@+id/goBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginStart="17sp"
+        android:layout_marginTop="26sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/vector" />
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:contentDescription="lv4 메뉴"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="60sp"
+        android:layout_height="66.195sp"
+        android:layout_marginTop="16sp"
         android:background="@drawable/lv4"
+        android:contentDescription="lv4 메뉴"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:contentDescription="lv3 메뉴"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60sp"
+        android:layout_height="66.195sp"
         android:background="@drawable/lv3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="40sp"/>
 
     <ImageButton
         android:id="@+id/imageButton3"
         android:contentDescription="lv2 메뉴"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60sp"
+        android:layout_height="66.195sp"
         android:background="@drawable/lv2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="40sp"/>
 
     <ImageButton
         android:id="@+id/imageButton4"
         android:contentDescription="lv1 메뉴"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60sp"
+        android:layout_height="66.195sp"
         android:background="@drawable/lv1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton3"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="40sp"/>
 
     <ImageButton
         android:id="@+id/imageButton5"
         android:contentDescription="lv0 메뉴"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60sp"
+        android:layout_height="66.195sp"
         android:background="@drawable/lv0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton4"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="40sp"/>
 
     <TextView
         android:id="@+id/today"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="104sp"
         android:text="오늘 하루는 어땠나요?"
+        android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -87,8 +88,9 @@
         android:id="@+id/select"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="4sp"
         android:text="감정우표를 선택해주세요"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/today" />
@@ -97,8 +99,9 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20sp"
         android:text="선택한 감정우표를 기반으로 맞춤형 질문이 배달됩니다"
+        android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/select" />
@@ -106,6 +109,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4sp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -116,28 +120,28 @@
             android:id="@+id/lv4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="70dp"
+            android:layout_marginBottom="80sp"
             android:text="더없이 행복한 하루였어요" />
 
         <TextView
             android:id="@+id/lv3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="70dp"
+            android:layout_marginBottom="85sp"
             android:text="들뜨고 흥분돼요" />
 
         <TextView
             android:id="@+id/lv2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="70dp"
+            android:layout_marginBottom="85sp"
             android:text="평범한 하루였어요" />
 
         <TextView
             android:id="@+id/lv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="70dp"
+            android:layout_marginBottom="90sp"
             android:text="생각이 많아지고 불안해요" />
 
         <TextView
