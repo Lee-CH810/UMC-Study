@@ -13,6 +13,21 @@
         android:theme="@style/Theme.UmcStudy"
         tools:targetApi="31">
         <activity
+            android:name=".lv0Activity"
+            android:exported="false" />
+        <activity
+            android:name=".lv1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".lv2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".lv3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".lv4Activity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
