@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "umcStudy"
 include(":app")
- 
+include(":test")
+include(":week2")
