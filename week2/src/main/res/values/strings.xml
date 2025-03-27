@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">week2</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_category">Hello! you are on the Category page now</string>
+    <string name="hello_home">Hello! you are on the Home page now</string>
+    <string name="hello_myPage">Hello! you are on the My page now</string>
+    <string name="hello_setting">Hello! you are on the Setting page now</string>
 </resources>

@@ -9,9 +9,24 @@
         android:id="@+id/homeFragment"
         android:name="com.example.week2.homeFragment"
         android:label="HomeFragment"
-        tools:layou
+        tools:layout="@layout/fragment_home"/>
 
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.week2.categoryFragment"
+        android:label="CategoryFragment"
+        tools:layout="@layout/fragment_category"/>
 
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.week2.settingFragment"
+        android:label="SettingFragment"
+        tools:layout="@layout/fragment_setting"/>
 
+    <fragment
+        android:id="@+id/myFragment"
+        android:name="com.example.week2.myFragment"
+        android:label="MyFragment"
+        tools:layout="@layout/fragment_my"/>
 
 </navigation>

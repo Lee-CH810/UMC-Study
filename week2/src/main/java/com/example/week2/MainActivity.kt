@@ -3,6 +3,8 @@ package com.example.week2
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.NavigationUI
 import com.example.week2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -12,18 +14,27 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // activity_main.xml파일 view 객체 할당
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        // 화면 출력
-        setContentView(binding.root)
-
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.main_container) as NavHostFragment
-
-        val navController = navHostFragment.navController
-
-        binding.bottomNavigationView.setupWithNavController(navController)
-
-
-
+        initBinding()
+        initNavigation()
     }
+
+    /**
+     * view binding 초기화
+     */
+    private fun initBinding() {
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+    }
+
+    /**
+     * bottomNavigationView 이벤트 처리
+     * setupWithNavController bottomNavigationView와 navController를 인자로 받고
+     * 바텀네비게이션에서 이동이 발생하면
+     * 그에 맞춰서 navController가 fragment를 매핑
+     * 이 과정에서
+     */
+    private fun initNavigation() {
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host) as NavHostFragment
+        NavigationUI.setupWithNavController(binding.bottomNavigationView, navHostFragment.findNavController())
+        }
 }

@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    kotlin("plugin.serialization") version "2.0.21"
 }
 
 android {
@@ -41,10 +42,20 @@ android {
 }
 
 dependencies {
-
-    implementation("androidx.navigation:navigation-ui-ktx:2.8.9")
     val fragment_version = "1.8.6"
-    implementation("androidx.fragment:fragment-ktx:$fragment_version")
+
+    implementation("androidx.navigation:navigation-compose:2.8.9")
+
+    implementation("androidx.navigation:navigation-ui:2.8.9")
+    implementation("androidx.navigation:navigation-fragment:2.8.9")
+
+    implementation("androidx.navigation:navigation-dynamic-features-fragment:2.8.9")
+
+    implementation("androidx.navigation:navigation-testing:2.8.9")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
+
+    implementation("androidx.fragment:fragment:$fragment_version")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
