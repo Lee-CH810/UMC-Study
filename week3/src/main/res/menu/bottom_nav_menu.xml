@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_bottom_home_no_select"
+        app:showAsAction="always"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/lookFragment"
+        android:icon="@drawable/ic_bottom_look_no_select"
+        app:showAsAction="always"
+        android:title="@string/look"/>
+    <item
+        android:id="@+id/searchFragment"
+        android:icon="@drawable/ic_bottom_search_no_select"
+        app:showAsAction="always"
+        android:title="@string/search"/>
+    <item
+        android:id="@+id/lockerFragment"
+        android:icon="@drawable/ic_bottom_locker_no_select"
+        app:showAsAction="always"
+        android:title="@string/locker"/>
+</menu>
+    <!--
+    app:showAsAction="always"
+    메뉴 항목이 화면에 어떻게 표시될 지를 설정. "always"는 항상 표시됨을 의미.
+    -->

@@ -23,3 +23,4 @@ rootProject.name = "umcStudy"
 include(":app")
 include(":test")
 include(":week2")
+include(":week3")
