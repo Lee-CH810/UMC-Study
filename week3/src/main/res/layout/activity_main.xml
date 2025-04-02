@@ -8,6 +8,8 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
+        <!--fragment의 호스팅을 위한 컨테이너
+        layout_height=0dp => ConstraintLayout의 다른 요소들을 우선 배치하고 남는 공간(너비/높이)을 모주 사용하겠다는 의미-->
         <FrameLayout
             android:id="@+id/main_frm"
             android:layout_width="match_parent"
@@ -38,14 +40,14 @@
                     android:id="@+id/main_miniplayer_title_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="라일락"
+                    android:text="@string/title"
                     android:textColor="@color/black"
                     android:textSize="13sp"/>
                 <TextView
                     android:id="@+id/main_miniplayer_singer_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="아이유 (IU)"
+                    android:text="@string/singer"
                     android:textSize="12sp"/>
             </LinearLayout>
 
@@ -56,6 +58,30 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
 
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/btn_miniplayer_previous"/>
+                <ImageView
+                    android:id="@+id/main_miniplayer_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/btn_miniplayer_play"/>
+                <ImageView
+                    android:id="@+id/main_pause_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/btn_miniplayer_pause"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/btn_miniplayer_next"/>
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:src="@drawable/btn_miniplayer_go_list"/>
             </LinearLayout>
 
 
