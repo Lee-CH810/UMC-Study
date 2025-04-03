@@ -14,7 +14,6 @@
                 android:id="@+id/home_pannel_background_vp"
                 android:layout_width="match_parent"
                 android:layout_height="400dp"
-                android:layout_marginTop="136dp"
                 android:scaleType="centerCrop"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -39,6 +38,7 @@
                 android:src="@drawable/btn_main_ticket"
                 android:layout_marginTop="0dp"
                 android:layout_marginEnd="15dp"
+                app:tint="@color/white"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
             <ImageView
@@ -48,6 +48,7 @@
                 android:src="@drawable/btn_main_setting"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
+                app:tint="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
             <ImageView
@@ -57,6 +58,7 @@
                 android:src="@drawable/btn_main_alarm"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
+                app:tint="@color/white"
                 app:layout_constraintEnd_toStartOf="@id/home_pannel_btn_setting_iv"
                 app:layout_constraintTop_toTopOf="parent"/>
 
@@ -77,7 +79,9 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/btn_pannel_play_large"
-                app:layout_constraintTop_toBottomOf="@id/home_pannel_title_tv"
+                android:layout_marginTop="15dp"
+                app:tint="@color/white"
+                app:layout_constraintTop_toTopOf="@id/home_pannel_title_tv"
                 app:layout_constraintEnd_toEndOf="parent"/>
 
             <TextView
@@ -86,6 +90,7 @@
                 android:layout_height="wrap_content"
                 android:text="총 23곡 2025.01.22"
                 android:textSize="12sp"
+                android:textColor="@color/white"
                 android:layout_marginStart="20dp"
                 android:layout_marginBottom="12dp"
                 app:layout_constraintBottom_toTopOf="@id/home_pannel_album_img_01_iv"
@@ -105,6 +110,7 @@
                 android:layout_height="wrap_content"
                 android:text="잠이 안온다"
                 android:textStyle="bold"
+                android:textColor="@color/white"
                 android:layout_marginStart="15dp"
                 app:layout_constraintStart_toEndOf="@id/home_pannel_album_img_01_iv"
                 app:layout_constraintTop_toTopOf="@id/home_pannel_album_img_01_iv"
@@ -115,6 +121,7 @@
                 android:layout_height="wrap_content"
                 android:text="젠(zen)"
                 android:textStyle="bold"
+                android:textColor="@color/white"
                 android:layout_marginStart="15dp"
                 app:layout_constraintStart_toEndOf="@id/home_pannel_album_img_01_iv"
                 app:layout_constraintTop_toBottomOf="@id/home_pannel_album_title_01_tv"
@@ -134,6 +141,7 @@
                 android:layout_height="wrap_content"
                 android:text="잠이 안온다"
                 android:textStyle="bold"
+                android:textColor="@color/white"
                 android:layout_marginStart="15dp"
                 app:layout_constraintStart_toEndOf="@id/home_pannel_album_img_02_iv"
                 app:layout_constraintTop_toTopOf="@id/home_pannel_album_img_02_iv"
@@ -144,6 +152,7 @@
                 android:layout_height="wrap_content"
                 android:text="젠(zen)"
                 android:textStyle="bold"
+                android:textColor="@color/white"
                 android:layout_marginStart="15dp"
                 app:layout_constraintStart_toEndOf="@id/home_pannel_album_img_02_iv"
                 app:layout_constraintTop_toBottomOf="@id/home_pannel_album_title_02_tv"

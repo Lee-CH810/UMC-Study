@@ -45,6 +45,15 @@ class HomeFragment : Fragment() {
     ): View? {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
 
+        /**
+         * Pannel 출력
+         */
+        val pannelAdapter = PannelVPAdapter(this)
+        pannelAdapter.addFragment((PannelFragment(R.drawable.img_first_album_default)))
+        // home fragment의 adapter에 pannel adapter를 할당
+        binding.homePannelBackgroundVp.adapter = pannelAdapter
+        binding.homePannelBackgroundVp.orientation = ViewPager2.ORIENTATION_HORIZONTAL
+
         binding.homePannelIndicator.setViewPager(binding.homePannelBackgroundVp)
 
         return binding.root
