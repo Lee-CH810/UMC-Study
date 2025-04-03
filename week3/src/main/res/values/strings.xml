@@ -6,4 +6,6 @@
     <string name="locker">보관함</string>
     <string name="title">라일락</string>
     <string name="singer">아이유 (IU)</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

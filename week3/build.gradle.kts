@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -42,6 +43,18 @@ android {
 }
 
 dependencies {
+
+    implementation("androidx.viewpager2:viewpager2:1.1.0")
+    implementation("me.relex:circleindicator:2.1.6")
+    // room
+    implementation("androidx.room:room-migration:2.6.1")
+    implementation("androidx.room:room-runtime:2.6.1")
+    // coroutine
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+
+//    implementation(libs.androidx.room.compiler)
+    implementation(libs.androidx.fragment.ktx)
+    ksp("androidx.room:room-compiler:2.6.1")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
