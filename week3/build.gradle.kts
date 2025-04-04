@@ -54,6 +54,7 @@ dependencies {
 
 //    implementation(libs.androidx.room.compiler)
     implementation(libs.androidx.fragment.ktx)
+    implementation(libs.androidx.recyclerview)
     ksp("androidx.room:room-compiler:2.6.1")
 
     implementation(libs.androidx.core.ktx)
